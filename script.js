@@ -18,9 +18,9 @@ const TARGETS = [
   { name: "devlindetailing.org", kind: "WEBSITE", url: "https://devlindetailing.org/" },
 
   // Servers / Services (examples — replace with your real endpoints)
-  { name: "Proxmox Alpha", kind: "SERVER", url: "http://100.113.56.48:8006/" },
-  { name: "Proxmox Delta", kind: "SERVER", url: "https://100.73.159.6:8006/" },
-  { name: "Proxmox Bravo", kind: "SERVER", url: "https://100.69.88.46:8006/" },
+  { name: "Proxmox Alpha", kind: "SERVER", url: "http://192.168.8.178:8006" },
+  { name: "Proxmox Delta", kind: "SERVER", url: "http://192.168.8.224:8006" },
+  { name: "Proxmox Bravo", kind: "SERVER", url: "http://192.168.8.50:8006" },
 
 ];
 
