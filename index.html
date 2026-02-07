@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Homelab Network Dashboard</title>
+  <meta name="color-scheme" content="dark" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="fx-grid" aria-hidden="true"></div>
+  <div class="fx-scan" aria-hidden="true"></div>
+
+  <header class="top">
+    <div class="brand">
+      <div class="mark" aria-hidden="true"></div>
+      <div class="titles">
+        <h1>HOMELAB STATUS</h1>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="refreshBtn" class="btn">
+        <span class="btnDot" aria-hidden="true"></span>
+        Refresh now
+      </button>
+      <div class="pill">
+        <span class="pillLabel">Interval</span>
+        <b id="intervalLabel">120s</b>
+      </div>
+      <div class="pill">
+        <span class="pillLabel">Last run</span>
+        <b id="lastRun">—</b>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel">
+      <div class="panelHead">
+        <div class="panelTitle">
+          <span class="chip">LIVE</span>
+          <h2>Targets</h2>
+        </div>
+        <div class="panelMeta">
+          <span id="summaryText" class="muted">—</span>
+        </div>
+      </div>
+
+      <ul id="list" class="list" aria-live="polite"></ul>
+    </section>
+
+    <footer class="foot">
+      <span class="muted">
+      </span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
